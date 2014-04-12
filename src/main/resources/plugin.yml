@@ -1,0 +1,10 @@
+name: McBar
+version: 1.0
+description: Userbars generation
+author: limito
+
+main: me.limito.mcbar.bukkit.McBarPlugin
+depend: [ScalaLibPlugin]
+
+commands:
+  mcbar:
