@@ -1,4 +1,4 @@
-package me.limito.mcbar
+package me.limito.mcbar.generators
 
 import scala.collection.mutable
 

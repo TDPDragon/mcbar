@@ -1,8 +1,9 @@
-package me.limito.mcbar
+package me.limito.mcbar.generators
 
-import BasicData._
-import GraphicsHelper._
 import java.awt.Graphics2D
+import GraphicsHelper._
+import BasicData._
+import me.limito.mcbar.data.PlayerId
 
 class SampleGenerator extends BarGenerator {
   override val size: Size = Size(300, 50)

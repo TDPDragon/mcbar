@@ -1,7 +1,8 @@
-package me.limito.mcbar
+package me.limito.mcbar.generators
 
 import java.awt.Graphics2D
 import java.awt.image.BufferedImage
+import me.limito.mcbar.data.PlayerId
 
 abstract class BarGenerator {
   val name: String
@@ -12,6 +13,7 @@ abstract class BarGenerator {
     val image = new BufferedImage(size.width, size.height, BufferedImage.TYPE_INT_ARGB_PRE)
     val graphics = image.createGraphics()
     generate(player, graphics)
+    graphics.dispose()
     image
   }
 }

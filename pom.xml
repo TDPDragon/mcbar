@@ -50,6 +50,11 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/Vault.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>org.scalaj</groupId>
+            <artifactId>scalaj-http_2.10</artifactId>
+            <version>0.3.14</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -3,8 +3,9 @@ package me.limito.mcbar.web
 import org.eclipse.jetty.server.handler.AbstractHandler
 import org.eclipse.jetty.server.Request
 import javax.servlet.http.{HttpServletResponse, HttpServletRequest}
-import me.limito.mcbar.{PlayerId, BarGeneratorRegistry}
 import javax.imageio.ImageIO
+import me.limito.mcbar.generators.BarGeneratorRegistry
+import me.limito.mcbar.data.PlayerId
 
 class RequestHandler extends AbstractHandler {
   /** Handles /{bar name}/{username}.png */

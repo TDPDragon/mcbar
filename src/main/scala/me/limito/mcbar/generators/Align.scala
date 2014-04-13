@@ -1,4 +1,4 @@
-package me.limito.mcbar
+package me.limito.mcbar.generators
 
 case class Align(position: Double)
 object Align {

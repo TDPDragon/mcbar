@@ -1,4 +1,4 @@
-package me.limito.mcbar
+package me.limito.mcbar.generators
 
 import java.awt.image.BufferedImage
 import java.awt.{Font, Color, Graphics2D}
