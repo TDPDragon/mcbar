@@ -11,11 +11,12 @@ import me.limito.mcbar.generators.{SampleGenerator, BarGeneratorRegistry}
 import me.limito.mcbar.data.PlayerId
 
 class McBarPlugin extends JavaPlugin {
-  val webServer = new WebServer(8070)
+  var webServer: WebServer = _
 
   override def onEnable() {
     loadGenerators()
     loadProviders()
+    initWebserver()
     webServer.start()
   }
 
@@ -34,5 +35,11 @@ class McBarPlugin extends JavaPlugin {
 
     DataProviderRegistry.register("money", new MoneyProvider)
     DataProviderRegistry.register("head", new HeadProvider(skinUrl))
+  }
+
+  private def initWebserver() {
+    saveDefaultConfig()
+    val webserverPort = getConfig.getInt("webserver-port")
+    webServer = new WebServer(webserverPort)
   }
 }
